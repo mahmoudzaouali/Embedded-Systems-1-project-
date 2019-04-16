@@ -7,12 +7,6 @@ import pyqrcode
 from cryptography.fernet import Fernet
 from firebase import firebase
 
-# def delete2():
-#   screen3.destroy()
-
-# def delete3():
-#   screen4.destroy()
-
 def sendmail():
     import smtplib
     from email.mime.text import MIMEText
@@ -310,7 +304,6 @@ def login():
     password_entry1.pack()
     Label(screen2, text="").pack()
     Button(screen2, text="Login", width=10, height=1, command=login_verify).pack()
-
 
 def main_screen():
     global screen
