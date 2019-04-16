@@ -50,11 +50,7 @@ def qrcode_generator():
     fb = firebase.FirebaseApplication('https://empedded-system-vise-project.firebaseio.com/')
 
     qr = qr_example.get()
-    #number = pyqrcode.create(qr)
-    #number.png('big-number.png', scale=10)
-    #number.show()
-    #sendmail()
-    #qr_entry.delete(0, END)
+    
 
 
     key = "yj7lkrUlbUHYLpB2o7_zCEFw5RysDUEQ76PeHacHs0c="
@@ -113,22 +109,6 @@ def session():
 
 def login_success():
     session()
-
-    # global screen3
-    # screen3 = Toplevel(screen)
-    # screen3.title("success")
-    # screen3.geometry("150x100")
-    # Label(screen3, text="Login success").pack()
-    # Button(screen3, text="OK", command=delete2).pack()
-
-
-# def password_not_recognised():
-#   global screen4
-#  screen4 = Toplevel(screen)
-# screen4.title("Error")
-# screen4.geometry("150x100")
-# Label(screen4, text="Password Error").pack()
-# Button(screen4, text="OK", command=delete3).pack()
 
 
 def user_not_found():
